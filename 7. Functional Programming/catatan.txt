@@ -1,0 +1,68 @@
+A) Paradigma Functional Programming
+: Ditulis dengan gaya deklaratif yang berfokus pada "what to solve"
+dibanding "how to solve"
+
+B) Konsep-Konsep Functional Programming
+    B.1) Pure Function
+    : -1. Mengharuskan fungsi untuk tidak bergantung terhadap
+    nilai yang berada di luar fungsi atau parameternya. 
+      -2. Dilarang mengubah nilai yang berada di luar.
+
+C) Immutability
+  : Sebuah objek tidak boleh diubah setelah objek tersebut dibuat. 
+
+D) Rekursif
+  : Rekursif merupakan teknik pada sebuah function untuk memanggil
+  dirinya sendiri.
+      
+E) Higher Order Function
+  : Fungsi yang dapat menerima fungsi lainnya pada argumen. 
+  Mengembalikan sebuah fungsi, atau bahkan keduanya.
+
+F) Reusable Function
+  : Dengan menerapkan konsep-konsep dalam Functional Programming,
+  Fungsi yang anda buat akan bersifat reusable. Karena fungsi
+  yang dibuat merupakan pure functionm ia tidak akan dipengaruhi ataupun 
+  mempengaruhi keadaan di/dari luar. Hal ini tentu membuat fungsi dapat
+  digunakan berkali-kali tanpa khawatir mendapatkan hasil di luar ekspektasi anda.
+
+  F.1) Array map
+  : Fungsi ini dipanggil dari sebuah data bertipe Array
+  dan menerima satu buah callback function. Callback
+  function tersebut akan dipanggil sebanyak jumlah panjang
+  array dan mengembalikan array baru. 
+
+  F.2) filter
+  : Berguna untuk melakukan proses penyaringan terhadap nilai
+  array yang ada. Callbakc function dari fungsi ini harus
+  mengembalikan boolean. Dimana bolean ini digunakan untuk
+  menentukan apakah item array lolos saring atau tidak.
+
+  F.3) reduce
+  : Mengeksekusi fungsi reducer pada setiap elemen array
+  dan hanya mengembalikan output satu nilai saja.
+
+  F.4) some
+  : Fungsi ini akan menghasilkan nilai boolean. nilai
+  yang dihasilkan didasarkan pada pernyataan apakah ada setidaknya
+  satu dari deretan nilai dalam array tersebut lolos berdasarkan kriteria yang 
+  kita tuliskan dalam callback function.
+
+  F.5) find
+  : Mencari apakah dalam deretan nilai terdapat nilai yang
+  sesuai dengan kriteria. Perbedaan dengan some find akan menghasilkan 
+  satu nilai dari elemen yang pertama kali ditemukan.
+
+  F.6) sort
+  : Pengurutan nilai dari sebuah deretan nilai. Secara default
+  ia akan mengurutkan berdasarkan string.  Ketika kita ingin
+  mengurutkan sesuai dengan kriteria yang kita inginkan maka kita perlu
+  membuat compare function sendiri.
+
+  Jika, negative maka `a` akan diletakkan sebelum `b`
+  Jika, positive maka `b` akan diletakkan sebelum `a`
+  Jika, 0 maka tidak ada perubahan posisi.
+
+  F.7) every
+  :  mengecheck apakah semua nilai dari sebuah array sesuai 
+  dengan kriteria yang didefinisikan.

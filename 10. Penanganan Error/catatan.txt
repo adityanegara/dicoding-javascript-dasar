@@ -1,0 +1,17 @@
+A) Try and Catch
+    : Tulis kode yang berpeluang menimbulkan error di dalam block try.
+    Apabila terjadi error di dalam blok kode try, maka ia akan ditangkan dan ditangani oleh
+    blok kode catch. 
+
+    A.1) parameter error
+    : Parameter pada blok catch yaitu error ialah suatu objek yang memiliki properti
+        1. name: nama error yang terjadi
+        2. message: pesan tentang detail error.
+        3. stack: informasi urutan kejadian yang menyebabkan error. 
+
+    A.2) finally
+    : blok finaly akan tetap dijalankan tanpa peduli apa pun hasil yang terjadi pada blok try-catch
+
+B) Throw
+    : Throw berfungsi untuk membuat error program. Terkadang ada keadaan dimana kita menginginkan
+    suatu program error seperti variable tidak terdefinisi.

@@ -1,0 +1,44 @@
+A) Package Manager
+    : Tools yang membantu pengelola package pada proyek agar lebih mudah.
+    Kita dapat dengan mudah memasang dan menghapus package yang
+    dibuat oleh orang lain pada projek kita. Selain itu, kita juga
+    dapat menulis module/package untuk dikonsumsi secara publik
+
+B) Jenis-jenis package Manager
+    1) Javascript = NPM, yarn
+    2) Java = Maven dan Gradle
+    3) PHP = Composer
+    4) Python = pip
+
+C) Install package
+    C.1) Local Install
+    : Local package akan dipasang di dalam direktori atau folder
+    yang sama dengan project kita. pacakage ini akan diletakkan
+    di dalam folder node_modules
+
+    npm install [nama package]. 
+
+    C.2) Global Install
+    : Packange dipasang di satu tempat pada sistem perangkat. 
+    Contoh package global : npm, nodemon, mocha
+
+       npm install [nama package]. -g
+
+    C.3) Install dev dependency
+    : dev dependency ialah package yang digunakan hanya ketika
+    melakukan development. contohnya seperti jest untuk testing.
+
+       npm install [nama package]. --save-dev
+
+D) package-lock.json
+    : menjelaskan susunan project dan package 
+    (suatu package bisa saja menggunakan package lainnya). 
+    Berkas package-lock.json juga mendefinisikan versi
+     package yang digunakan dengan lebih spesifik
+
+E) Uninstall package
+    E.1) Uninstall dependencies
+    : npm uninstall [nama-package]
+
+    E.2) Uninstall dev dependencies
+    : npm uninstall [nama-package] --save-dev

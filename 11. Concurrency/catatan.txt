@@ -1,0 +1,50 @@
+A) Synchronous
+    : Kode dijalankan secara berurutan dari atas ke bawah. Bila menulis
+    dua baris kode. Kode pada baris kedua tidak akan dijalankan sebelum 
+    kode baris pertama selesai.
+
+B) Asynchronous
+    : Kode dijalankan secara bersamaan. Bila menulis dua baris kode.
+    Kode pada baris kedua dapat berjalan selagi kode pertama berjalan.
+
+C) Fungsi setTimeOut(function, waktuDelayEksekusi)
+    : Fungsi bawaan javascript ini akan menjalankan parameter pertama. yaitu function secara
+    asynchronous dengan delay selama parameter kedua.
+
+D) Callback function
+    : Function yang dijalankan setelah function asynchronous selesai 
+    berjalan.
+
+E) Callback Hell
+    : Callback hell terjadi karena banyak sekali callback function yang 
+    bersarang karena saling membutuhkan satu sama lain.
+
+F) Promise
+    : Promise berfungsi untuk menjalankan suatu fungsi asynchronous.
+    Dimana terdapat tiga keadaan dari Promise. 
+    1) Pending : Janji sedang dalam proses.
+    2) Fulfilled: Janji terpenuhi
+    3) Rejected: Janji gagal terpenuhi.
+
+    F.1) Constructing Promise Object
+    : const [nama variabel] = new Promise([executor function]);
+    executor function memiliki dua parameter fungsi
+    1) resolve() : fungsi yang dijalankan ketika promise fulfileld.
+    2) reject() : fungsi yang dijalankan ketika promise rejected.
+
+    F.2) Consuming Promises
+    : .then([handlerSuccess], [handlerError]) memiliki dua callback 
+    function.
+    1) handlerSuccess: Fungsi dijalankan ketika promise berstatus resolve
+    2) handlerError : Fungsi dijalankan ketika promise berstatus reject.
+
+    F.3) onRejected with Catch Method
+    : Daripada menuliskan handleError pada method then. Gunakanlah
+    method catch([handleError]) untuk menjalankan function handleError.
+
+    F.3) promiseAll
+    : Menjalankan promise bersamaan
+
+G) Async Await
+    : Pengganti then bisa dengan mengubah function menjadi async function. dan code yang mengembalikan promise
+    dituliskan await.
