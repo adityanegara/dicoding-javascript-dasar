@@ -1,0 +1,68 @@
+A) Definisi Testing
+    : Proses pengujian yan gidugnakan untuk
+    melakukan kontrol kualtias dari kode yang kita tulis,
+    memastikan bahwa software yang akan dipublikasikan
+    ke pengguna minim adanya kecacatan atau bugs.
+
+B) Cara-cara pengujian perangkat lunak
+    B.1) Manual
+        : Proses pengujian secara manual dilakukan
+        oleh tester. Proses ini biasanya berkaitan
+        dengan usability, accessibility dari sebuah
+        aplikasi.
+
+    B.2) Otomatis
+        : Proses pengujian dilakukan oleh komputer dengan 
+        menuliskan script khusus, biasanya dilakukan 
+        oleh software engineer langsung atau oleh seorang
+        QA Engineer. Proses ini biasanya berkaitan dengan
+        fungsionalitas dari sebuah aplikasi.
+
+C) Jenis-jenis pengujian
+    C.1) Static test
+    :  Memastikan tidak adanya typo. Dan memastikan
+    tidak ada error types.
+
+    C.2) Unit test
+    : Dilakukan untuk memastikan bahwa setiap unit kode
+    bisa bekerja sesuai harapan. Unit sendiri berarti
+    komponen terkecil yang dapat diuji secara terisolasi 
+    dalam perangkat lunak yang kita buat, dapat berupa
+    fungsi, class.
+
+    C.3) Integration test
+    : Memastikan beberapa seragnkaian fungsi yang saling 
+    ketergantungan satu sama lain berjalan semestinya.
+
+    C.4) End to End test
+    : Proses pengujian sebuah aplikasi untuk menguji flow
+    dari awal hingga akhir, layaknya seorang user menggunakan
+    aplikasi. 
+
+D) Menulis Kode pengujian
+    D.1) Format
+     :   test('deskripsi dari testcase kamu', () =>{
+            expect(perintah).matcher(nilai yang diekspektasikan)
+        })
+    
+    D.2) Contoh
+    :   test('two plus two is four', () =>{
+        expect(2+2).toBe(4);
+    })
+
+    D.3) Macam-macam matcher
+    1) toBe(x)
+    : Nilai ekspektasi yang diharapkan adalah x
+
+    2) toEqual(x)
+    : Nilai ekspektasi yang diharapkan sama dengan X
+
+    3) toBeNull()
+    : Nilai yang diekspektasi ialah null
+
+    4) toBeTruthy()
+    : Nilai yang diekspektasi ialah truthy
+
+    5) toBeFalsy()
+    : Nilai yang diekspektasi ialah falsy
+    
